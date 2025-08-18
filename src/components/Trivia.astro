@@ -1,0 +1,37 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="trivia" class="py-20 bg-slate-700">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-slate-100 mb-4">Trivia</h2>
+      <p class="text-xl text-slate-300">
+        A few things about me outside of coding
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {
+        siteConfig.trivia.map((item) => (
+          <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-slate-600">
+            {item.image && (
+              <div class="h-48 overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.text}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            )}
+            <div class={`p-8 text-center ${!item.image ? 'h-full flex items-center justify-center' : ''}`}>
+              <p class="text-lg text-slate-200 font-medium">
+                {item.text}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
