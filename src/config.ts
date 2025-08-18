@@ -3,13 +3,13 @@ export const siteConfig = {
   title: "Software Engineer & Computer Science Student",
   description: "Portfolio website of Andrei Massaini - Software Engineer specializing in full-stack development and machine learning",
   accentColor: "#60a5fa",
-  profileImage: "/port/picture.jpg",
+  profileImage: "picture.jpg",
   social: {
     email: "andrei.massaini@hotmail.com",
     linkedin: "https://linkedin.com/in/andrei-massaini-b93312250",
     twitter: "",
     github: "https://github.com/Andreixzc",
-    resume: "/port/AndreiCvEN2025.pdf",
+    resume: "AndreiCvEN2025.pdf",
   },
   aboutMe:
     "Computer Science student at PUC Minas with experience in full-stack development and machine learning. Currently working as a Software Engineer Intern at Gedanken, developing supplier homologation platforms with Python, Django, and GraphQL. Focus on creating practical solutions that bridge technology and real-world applications, with expertise in web development, AI, and data science.",
@@ -100,15 +100,15 @@ export const siteConfig = {
   trivia: [
     {
       text: "Competitive swimmer",
-      image: "/port/swim.jpg"
+      image: "swim.jpg"
     },
     {
       text: "Former Dota 2 competitive player",
-      image: "/port/dota2.png"
+      image: "dota2.png"
     },
     {
       text: "Guitar enthusiast", 
-      image: "/port/guitar.png"
+      image: "guitar.png"
     }
   ],
 };
